@@ -41,7 +41,7 @@ export default function Header(){
     ]
 
     return(
-     <Header className ='py-3 shadow bg-gray-500'>
+     <header className ='py-3 shadow bg-gray-500'>
         <Container>
             <nav>
                 <div className="mr-4">
@@ -53,20 +53,20 @@ export default function Header(){
                         {navItems.map((item) => item.active?(
                             <li key={item.name}>
                                 <button onClick={()=> navigate(item.slug)}
-                                    className="inline-block px-6 py2 duration-200 hover:bg-blue-100 rounded-full"
+                                    className="inline-block px-6 py-2 duration-200 hover:bg-blue-100 rounded-full"
                                     >{item.name}</button>
                             </li>  
                         ) : null 
                     )}
 
                     {authStatus &&(
-                        LogoutBtn
+                       <LogoutBtn />
                     )}
                     </ul>
                 </div>
             </nav>
         </Container>
-     </Header>
+     </header>
 
     
     );
