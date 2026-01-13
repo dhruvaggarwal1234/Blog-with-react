@@ -33,7 +33,7 @@ async createAccount({email , password ,name}){
 
     }
     catch(error){
-        console.log("This is Error From CreateAccount :" , error);
+        console.log("This is Error From CreateAccount :", error);
     }
 }
 
@@ -44,7 +44,7 @@ async login({email,password}){
 
     }
     catch(error){
-        console.log("This is Login Error :" , error);
+        console.log("This is Login Error :", error);
     }
 }
 
@@ -54,7 +54,7 @@ async getCurrentUser(){
        return this.account.get();
     }
     catch(error){
-        console.log("This is getCurrentUser Error :" , error)
+        console.log("This is getCurrentUser Error :", error)
     }
 
      return null;

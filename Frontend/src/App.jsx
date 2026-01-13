@@ -2,10 +2,10 @@ import { useEffect, useState } from "react"
 import { useDispatch } from "react-redux";
 
 import authService from "./appwrite/auth"
-import {login,logout} from './store/authSlice'
+import {login} from './store/authSlice'
 import Header from "./components/Header/Header.jsx"
 import Footer from "./components/Footer/Footer.jsx"
-
+import { LogoutBtn } from "./components/index.js";
 
 
 function App() {
@@ -32,6 +32,7 @@ function App() {
     <div className="w-full block">
       <Header />
       <Footer />
+      <LogoutBtn />
     </div>
 
 
